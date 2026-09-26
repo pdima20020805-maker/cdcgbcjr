@@ -53,7 +53,7 @@ section{
 .start-btn{
   position:absolute;
   left:50%;
-  bottom:320px;
+  bottom:600px;
   transform:translateX(-50%);
 
   border:none;
