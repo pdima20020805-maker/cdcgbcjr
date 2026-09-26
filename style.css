@@ -116,13 +116,13 @@ section{
 
     /* положение таймера поверх фото */
     left:50%;
-    bottom:30px;
+    bottom:32px;
 
     transform:translateX(-50%);
 
     display:flex;
     justify-content:center;
-    gap:30px;
+    gap:18px;
 
     width:100%;
 }
@@ -134,14 +134,14 @@ section{
 .timer-item span{
     display:block;
     font-family:'Montserrat';
-    font-size:30px;
+    font-size:18px;
     color:#c9a227;
 }
 
 .timer-item p{
-    margin-top:18px;
+    margin-top:5px;
     font-family:'Montserrat';
-    font-size:18px;
+    font-size:10px;
     color:#c9a227;
 }
 
