@@ -53,7 +53,7 @@ section{
 .start-btn{
   position:absolute;
   left:50%;
-  bottom:30px;
+  bottom:7px;
   transform:translateX(-50%);
 
   border:none;
@@ -116,13 +116,13 @@ section{
 
     /* положение таймера поверх фото */
     left:50%;
-    bottom:320px;
+    bottom:30px;
 
     transform:translateX(-50%);
 
     display:flex;
     justify-content:center;
-    gap:18px;
+    gap:30px;
 
     width:100%;
 }
@@ -134,14 +134,14 @@ section{
 .timer-item span{
     display:block;
     font-family:'Montserrat';
-    font-size:18px;
+    font-size:30px;
     color:#c9a227;
 }
 
 .timer-item p{
     margin-top:5px;
     font-family:'Montserrat';
-    font-size:10px;
+    font-size:18px;
     color:#c9a227;
 }
 
