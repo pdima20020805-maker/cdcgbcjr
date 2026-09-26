@@ -111,38 +111,33 @@ section{
     display:block;
 }
 
-.timer{
-    position:absolute;
-
-    /* положение таймера поверх фото */
-    left:50%;
-    bottom:32px;
-
-    transform:translateX(-50%);
-
-    display:flex;
-    justify-content:center;
-    gap:18px;
-
-    width:100%;
+.timer {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;            /* ← было 18px, стало меньше */
+    width: 100%;
 }
 
-.timer-item{
-    text-align:center;
+.timer-item {
+    text-align: center;
 }
 
-.timer-item span{
-    display:block;
-    font-family:'Montserrat';
-    font-size:18px;
-    color:#c9a227;
+.timer-item span {
+    display: block;
+    font-family: 'Montserrat';
+    font-size: 14px;      /* ← было 18px */
+    color: #c9a227;
 }
 
-.timer-item p{
-    margin-top:5px;
-    font-family:'Montserrat';
-    font-size:10px;
-    color:#c9a227;
+.timer-item p {
+    margin-top: 2px;      /* ← было 5px */
+    font-family: 'Montserrat';
+    font-size: 8px;       /* ← было 10px */
+    color: #c9a227;
 }
 
 /* БЛОК 4 */
