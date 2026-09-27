@@ -163,11 +163,11 @@ section{
 .timer {
     position: absolute;
     left: 50%;
-    bottom: 25px;
+    bottom: 8px;                 /* ← опустили с 25px до 8px */
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    gap: 10px;            /* ← было 18px, стало меньше */
+    gap: 12px;                   /* расстояние между блоками */
     width: 100%;
 }
 
@@ -177,16 +177,18 @@ section{
 
 .timer-item span {
     display: block;
-    font-family: 'Montserrat';
-    font-size: 10px;      /* ← было 18px */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;             /* размер цифр */
     color: #c9a227;
+    line-height: 1;
 }
 
 .timer-item p {
-    margin-top: 2px;      /* ← было 5px */
-    font-family: 'Montserrat';
-    font-size: 8px;       /* ← было 10px */
+    margin-top: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;              /* размер подписей "дней", "часов" */
     color: #c9a227;
+    line-height: 1;
 }
 
 /* БЛОК 4 */
@@ -267,5 +269,17 @@ section{
     }
     #guestName {
         color: #f0d27a;
+    }
+}
+@media (max-width: 768px) {
+    .timer {
+        bottom: 6px;             /* на телефоне — у самого низа */
+        gap: 10px;
+    }
+    .timer-item span {
+        font-size: 14px;
+    }
+    .timer-item p {
+        font-size: 8px;
     }
 }
