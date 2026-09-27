@@ -162,9 +162,9 @@ section{
 
 .timer {
     position: absolute;
-    left: 56%;                 /* ← было 50%, стало 46% — сдвиг влево */
+    left: 50%;
     bottom: 8px;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateX(20px);   /* ← сдвиг ВПРАВО на 20px */
     display: flex;
     justify-content: center;
     gap: 14px;
@@ -273,8 +273,9 @@ section{
 }
 @media (max-width: 768px) {
     .timer {
-        left: 46%;
+        left: 50%;
         bottom: 6px;
+        transform: translateX(-50%) translateX(15px);   /* ← вправо на телефоне */
         gap: 12px;
     }
 }
