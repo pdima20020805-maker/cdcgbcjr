@@ -120,7 +120,7 @@ section{
     left: 50%;
     transform: translate(-50%, 0);   /* ← убери -50% по Y, чтобы не было центрирования */
     text-align: center;
-    color: #c9a227;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     z-index: 2;
@@ -128,7 +128,7 @@ section{
 }
 
 #guestName {
-    color: #c9a227;       /* золотистый, как таймер */
+    color: #000000;       /* золотистый, как таймер */
     font-weight: bold;
 }
 
