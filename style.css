@@ -116,11 +116,11 @@ section{
 /* ===== НОВЫЙ КОД ДЛЯ ИМЕНИ ===== */
 .guest-welcome {
     position: absolute;
-    top: 10%;                 /* ← было 50%, стало 15% — текст поднялся */
+    top: 10%;                     /* подбери под свой дизайн */
     left: 50%;
-    transform: translate(-50%, 0);   /* ← убери -50% по Y, чтобы не было центрирования */
+    transform: translate(-50%, 0);
     text-align: center;
-    color: #000000;
+    color: #000000;               /* ← ЧЁРНЫЙ цвет для "Дорогой(ая)" и "!" */
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     z-index: 2;
@@ -128,7 +128,7 @@ section{
 }
 
 #guestName {
-    color: #000000;       /* золотистый, как таймер */
+    color: #000000;      
     font-weight: bold;
 }
 
