@@ -164,13 +164,12 @@ section{
     position: absolute;
     left: 50%;
     bottom: 8px;
-    transform: translateX(-50%) translateX(35px);   /* ← было 20px, стало 35px */
+    transform: translateX(-50%) translateX(25px);   /* ← было 35px, стало 25px */
     display: flex;
     justify-content: center;
     gap: 14px;
     width: 100%;
 }
-
 .timer-item {
     text-align: center;
 }
@@ -275,7 +274,7 @@ section{
     .timer {
         left: 50%;
         bottom: 6px;
-        transform: translateX(-50%) translateX(35px);
+        transform: translateX(-50%) translateX(25px);
         gap: 12px;
     }
 }
