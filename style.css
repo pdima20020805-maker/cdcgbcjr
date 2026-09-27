@@ -116,11 +116,13 @@ section{
 /* ===== НОВЫЙ КОД ДЛЯ ИМЕНИ ===== */
 .guest-welcome {
     position: absolute;
-    top: 10%;                     /* подбери под свой дизайн */
+    top: 10%;
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
-    color: #000000;               /* ← ЧЁРНЫЙ цвет для "Дорогой(ая)" и "!" */
+    color: #4a1f1f;                                        /* тёмно-бордовый */
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);         /* белая тень */
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     z-index: 2;
@@ -128,8 +130,9 @@ section{
 }
 
 #guestName {
-    color: #000000;      
-    font-weight: bold;
+    color: #4a1f1f;                                        /* тот же цвет для имени */
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    font-weight: 900;
 }
 
 /* БЛОК 3 */
