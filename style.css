@@ -252,3 +252,26 @@ section{
     opacity:1;
     transform:translateY(0);
 }
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ (до 768px) ===== */
+@media (max-width: 768px) {
+    .guest-welcome {
+        color: #1a0a0a;                                       /* почти чёрный */
+        text-shadow: 0 0 8px rgba(255, 255, 255, 1),
+                     0 0 4px rgba(255, 255, 255, 1),
+                     0 1px 3px rgba(0, 0, 0, 0.9);            /* тень усилена */
+        font-weight: 900;
+        font-size: 22px;                                      /* чуть крупнее */
+        background: rgba(255, 255, 255, 0.55);                /* полупрозрачная подложка */
+        padding: 8px 16px;
+        border-radius: 10px;
+        width: auto;
+        max-width: 92%;
+        display: inline-block;
+    }
+
+    #guestName {
+        color: #8b0000;                                       /* имя — тёмно-красное */
+        font-weight: 900;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 1);
+    }
+}
