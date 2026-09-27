@@ -120,9 +120,11 @@ section{
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
-    color: #4a1f1f;                                        /* тёмно-бордовый */
-    text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);         /* белая тень */
-    font-weight: 700;
+    color: #1a0a0a;                                        /* почти чёрный, с бордовым отливом */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1),          /* белое свечение */
+                 0 0 4px rgba(255, 255, 255, 0.9),
+                 1px 1px 2px rgba(0, 0, 0, 0.6);           /* лёгкая тёмная обводка */
+    font-weight: 800;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     z-index: 2;
@@ -130,8 +132,10 @@ section{
 }
 
 #guestName {
-    color: #4a1f1f;                                        /* тот же цвет для имени */
-    text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    color: #1a0a0a;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                 0 0 4px rgba(255, 255, 255, 0.9),
+                 1px 1px 2px rgba(0, 0, 0, 0.6);
     font-weight: 900;
 }
 
