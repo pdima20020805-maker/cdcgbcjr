@@ -108,11 +108,11 @@ section{
 /* ===== НОВЫЙ КОД ДЛЯ ИМЕНИ ===== */
 .guest-welcome {
     position: absolute;
-    top: 15%;                 /* ← было 50%, стало 15% — текст поднялся */
+    top: 10%;                 /* ← было 50%, стало 15% — текст поднялся */
     left: 50%;
     transform: translate(-50%, 0);   /* ← убери -50% по Y, чтобы не было центрирования */
     text-align: center;
-    color: #ffffff;
+    color: #c9a227;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     z-index: 2;
