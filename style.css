@@ -162,7 +162,7 @@ section{
 
 .timer {
     position: absolute;
-    left: 46%;                 /* ← было 50%, стало 46% — сдвиг влево */
+    left: 56%;                 /* ← было 50%, стало 46% — сдвиг влево */
     bottom: 8px;
     transform: translateX(-50%);
     display: flex;
