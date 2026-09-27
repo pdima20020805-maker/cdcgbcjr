@@ -162,12 +162,12 @@ section{
 
 .timer {
     position: absolute;
-    left: 50%;
-    bottom: 8px;                 /* ← опустили с 25px до 8px */
+    left: 46%;                 /* ← было 50%, стало 46% — сдвиг влево */
+    bottom: 8px;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    gap: 12px;                   /* расстояние между блоками */
+    gap: 14px;
     width: 100%;
 }
 
@@ -273,13 +273,8 @@ section{
 }
 @media (max-width: 768px) {
     .timer {
-        bottom: 6px;             /* на телефоне — у самого низа */
-        gap: 10px;
-    }
-    .timer-item span {
-        font-size: 14px;
-    }
-    .timer-item p {
-        font-size: 8px;
+        left: 46%;
+        bottom: 6px;
+        gap: 12px;
     }
 }
