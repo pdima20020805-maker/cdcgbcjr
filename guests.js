@@ -1,7 +1,3 @@
-// ===== СПИСОК ГОСТЕЙ =====
-// id — уникальный код для ссылки (не должен повторяться)
-// name — то, что гость увидит на сайте
-
 const GUESTS = [
     { id: 'tatyana',        name: 'Татьяна' },
     { id: 'anastasia',      name: 'Анастасия' },
@@ -24,5 +20,6 @@ const GUESTS = [
     { id: 'elena-lyudmila', name: 'Елена и Людмила' },
     { id: 'sergey',         name: 'Сергей' },
     { id: 'vladimir-pavel-yulia', name: 'Владимир, Павел и Юлия' },
-    { id: 'valera',         name: 'Валера' }
+    { id: 'valera',         name: 'Валера' },
+    { id: 'yuri',           name: 'Юрий' }        // ← НОВАЯ СТРОКА
 ];
