@@ -115,45 +115,34 @@ section{
 
 /* ===== НОВЫЙ КОД ДЛЯ ИМЕНИ ===== */
 .guest-welcome {
-    position: absolute !important;
-    top: 2% !important;
-    left: 50% !important;
-    transform: translate(-50%, 0) !important;
-    text-align: center !important;
-    color: #ffffff !important;
-    background: transparent !important;      /* ← убирает плашку */
-    padding: 0 !important;                   /* ← убирает отступы */
-    border-radius: 0 !important;
-    font-weight: 700 !important;
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 16px !important;
-    z-index: 2 !important;
-    width: 95% !important;
+    position: absolute;
+    top: 9%;                                              /* ← опустили ниже */
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    color: #f5e6c8;                                       /* тёплый кремовый — в тон заката */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    z-index: 2;
+    width: 92%;
+    /* Мягкое золотистое свечение — заметно, но не грубо */
     text-shadow:
-        -1px -1px 0 #000,
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000,
-        -2px  0   0 #000,
-         2px  0   0 #000,
-         0   -2px 0 #000,
-         0    2px 0 #000,
-         0 0 8px rgba(0, 0, 0, 0.9) !important;
+        0 0 6px rgba(0, 0, 0, 0.85),
+        0 0 12px rgba(0, 0, 0, 0.7),
+        0 0 20px rgba(201, 162, 39, 0.6),
+        0 1px 2px rgba(0, 0, 0, 0.9);
 }
 
 #guestName {
-    color: #c9a227 !important;
-    font-weight: 900 !important;
+    color: #e6c76a;                                       /* тёплое золото — как на сайте */
+    font-weight: 800;
+    font-style: italic;                                   /* курсив — элегантнее */
     text-shadow:
-        -1px -1px 0 #000,
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000,
-        -2px  0   0 #000,
-         2px  0   0 #000,
-         0   -2px 0 #000,
-         0    2px 0 #000,
-         0 0 8px rgba(0, 0, 0, 0.9) !important;
+        0 0 6px rgba(0, 0, 0, 0.9),
+        0 0 14px rgba(201, 162, 39, 0.8),
+        0 1px 2px rgba(0, 0, 0, 1);
 }
 
 /* БЛОК 3 */
@@ -272,11 +261,11 @@ section{
 /* ===== МОБИЛЬНАЯ ВЕРСИЯ (до 768px) ===== */
 @media (max-width: 768px) {
     .guest-welcome {
-        top: 1%;
-        font-size: 14px;
-        width: 98%;
+        top: 11%;
+        font-size: 15px;
+        width: 95%;
     }
     #guestName {
-        color: #e6c76a;
+        color: #f0d27a;
     }
 }
