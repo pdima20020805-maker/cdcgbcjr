@@ -53,13 +53,21 @@ section{
 .start-btn {
     position: absolute;
     left: 50%;
-    bottom: 45%;              /* подбери значение под свой дизайн */
+    bottom: 30%;              /* ← уменьши с 45% до 30%, чтобы кнопка была выше */
     transform: translateX(-50%);
-    z-index: 10;              /* ← ДОБАВЬ ЭТУ СТРОКУ: кнопка поверх картинки */
+    z-index: 10;
     border: none;
     background: transparent;
     padding: 0;
     cursor: pointer;
+    display: block;           /* ← добавь это */
+}
+
+.start-btn img {
+    display: block;
+    width: 170px;             /* ← подбери под свой дизайн */
+    max-width: 70vw;
+    height: auto;
 }
 
 .start-img {
