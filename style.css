@@ -164,7 +164,7 @@ section{
     position: absolute;
     left: 50%;
     bottom: 8px;
-    transform: translateX(-50%) translateX(25px);   /* ← было 35px, стало 25px */
+    transform: translateX(-50%) translateX(23px);   /* ← было 35px, стало 25px */
     display: flex;
     justify-content: center;
     gap: 14px;
@@ -274,7 +274,7 @@ section{
     .timer {
         left: 50%;
         bottom: 6px;
-        transform: translateX(-50%) translateX(25px);
+        transform: translateX(-50%) translateX(23px);
         gap: 12px;
     }
 }
