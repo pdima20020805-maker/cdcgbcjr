@@ -33,33 +33,37 @@ section{
 }
 
 /* БЛОК 1 */
-.start-screen{
-  position:fixed;
-  inset:0;
-  width:100%;
-  height:100vh;
-  background:#ebe4dd;
-  z-index:9999;
-  overflow:hidden;
+.start-screen {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ebe4dd;
+    z-index: 9999;
+    overflow: hidden;
 }
 
-.start-img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
+.start-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 1;
 }
 
-.start-btn{
-  position:absolute;
-  left:50%;
-  bottom:190px;
-  transform:translateX(-50%);
-
-  border:none;
-  background:transparent;
-  padding:0;
-  cursor:pointer;
+.start-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translateX(-50%);
+    z-index: 10;                 /* ← ОБЯЗАТЕЛЬНО, иначе уйдёт под картинку */
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
 }
 
 .start-btn img{
