@@ -182,14 +182,12 @@ section{
     position:relative;
 }
 
-.block4-btn{
-    position:absolute;
-
-    /* положение кнопки */
-    left:50%;
-    bottom:-4px;
-
-    transform:translateX(-50%);
+.block4-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;                 /* ← было -4px, стало 20px — кнопка вернётся внутрь карты */
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 .block4-btn img{
