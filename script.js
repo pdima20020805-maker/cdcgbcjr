@@ -80,3 +80,23 @@ const revealObserver = new IntersectionObserver(
 revealElements.forEach(element => {
     revealObserver.observe(element);
 });
+// ===== ПОДМЕНА КАРТИНКИ БЛОКА 2 =====
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const guestId = urlParams.get('id');
+    const guestImageElement = document.getElementById('guestImage');
+
+    if (!guestImageElement) return;
+
+    const guest = GUESTS.find(g => g.id === guestId);
+    if (!guest || !guest.image) return;
+
+    const testImg = new Image();
+    testImg.onload = function() {
+        guestImageElement.src = guest.image;
+    };
+    testImg.onerror = function() {
+        console.log('Картинка не найдена:', guest.image);
+    };
+    testImg.src = guest.image;
+});
