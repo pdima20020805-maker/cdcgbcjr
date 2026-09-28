@@ -185,7 +185,7 @@ section{
 .block4-btn {
     position: absolute;
     left: 50%;
-    bottom: 18px;                 /* ← было -4px, стало 20px — кнопка вернётся внутрь карты */
+    bottom: 16px;                 /* ← было -4px, стало 16px — кнопка вернётся внутрь карты */
     transform: translateX(-50%);
     z-index: 2;
 }
