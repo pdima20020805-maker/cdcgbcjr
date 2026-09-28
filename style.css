@@ -50,25 +50,25 @@ section{
   display:block;
 }
 
-.start-btn {
-    position: absolute;
-    left: 50%;
-    bottom: 30%;              /* ← уменьши с 45% до 30%, чтобы кнопка была выше */
-    transform: translateX(-50%);
-    z-index: 10;
-    border: none;
-    background: transparent;
-    padding: 0;
-    cursor: pointer;
-    display: block;           /* ← добавь это */
+.start-btn{
+  position:absolute;
+  left:50%;
+  bottom:190px;
+  transform:translateX(-50%);
+
+  border:none;
+  background:transparent;
+  padding:0;
+  cursor:pointer;
 }
 
-.start-btn img {
-    display: block;
-    width: 170px;             /* ← подбери под свой дизайн */
-    max-width: 70vw;
-    height: auto;
+.start-btn img{
+  display:block;
+  width:170px;
+  max-width:70vw;
+  height:auto;
 }
+
 
 .start-img {
     position: absolute;
@@ -129,34 +129,38 @@ section{
     display:block;
 }
 
-.timer {
-    position: absolute;
-    left: 50%;
-    bottom: 8px;
-    transform: translateX(-50%) translateX(23px);   /* ← было 35px, стало 25px */
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    width: 100%;
-}
-.timer-item {
-    text-align: center;
+.timer{
+    position:absolute;
+
+    /* положение таймера поверх фото */
+    left:50%;
+    bottom:32px;
+
+    transform:translateX(-50%);
+
+    display:flex;
+    justify-content:center;
+    gap:18px;
+
+    width:100%;
 }
 
-.timer-item span {
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;             /* размер цифр */
-    color: #c9a227;
-    line-height: 1;
+.timer-item{
+    text-align:center;
 }
 
-.timer-item p {
-    margin-top: 3px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 9px;              /* размер подписей "дней", "часов" */
-    color: #c9a227;
-    line-height: 1;
+.timer-item span{
+    display:block;
+    font-family:'Montserrat';
+    font-size:18px;
+    color:#c9a227;
+}
+
+.timer-item p{
+    margin-top:5px;
+    font-family:'Montserrat';
+    font-size:10px;
+    color:#c9a227;
 }
 
 /* БЛОК 4 */
